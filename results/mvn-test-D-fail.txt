@@ -1,0 +1,49 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36mmn.edu.must.sqat:lab09-jacoco[0;1m >--------------------[m
+[[1;34mINFO[m] [1mBuilding lab09-jacoco 1.0[m
+[[1;34mINFO[m]   from pom.xml
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco:0.8.12:prepare-agent[m [1m(default)[m @ [36mlab09-jacoco[0;1m ---[m
+[[1;34mINFO[m] argLine set to -javaagent:/home/munkhjin/.m2/repository/org/jacoco/org.jacoco.agent/0.8.12/org.jacoco.agent-0.8.12-runtime.jar=destfile=/home/munkhjin/lab09-jacoco/target/jacoco.exec
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mresources:3.3.1:resources[m [1m(default-resources)[m @ [36mlab09-jacoco[0;1m ---[m
+[[1;34mINFO[m] skip non existing resourceDirectory /home/munkhjin/lab09-jacoco/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mcompiler:3.13.0:compile[m [1m(default-compile)[m @ [36mlab09-jacoco[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mresources:3.3.1:testResources[m [1m(default-testResources)[m @ [36mlab09-jacoco[0;1m ---[m
+[[1;34mINFO[m] skip non existing resourceDirectory /home/munkhjin/lab09-jacoco/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mcompiler:3.13.0:testCompile[m [1m(default-testCompile)[m @ [36mlab09-jacoco[0;1m ---[m
+[[1;34mINFO[m] Recompiling the module because of [1mchanged source code[m.
+[[1;34mINFO[m] Compiling 2 source files with javac [debug release 17] to target/test-classes
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;31mERROR[m] /home/munkhjin/lab09-jacoco/src/test/java/mn/edu/must/sqat/ScholarshipCalculatorTest.java:[143,10] method gpa_loopZero_emptyArray_throws() is already defined in class mn.edu.must.sqat.ScholarshipCalculatorTest
+[[1;31mERROR[m] /home/munkhjin/lab09-jacoco/src/test/java/mn/edu/must/sqat/ScholarshipCalculatorTest.java:[148,10] method gpa_loopZero_null_throws() is already defined in class mn.edu.must.sqat.ScholarshipCalculatorTest
+[[1;31mERROR[m] /home/munkhjin/lab09-jacoco/src/test/java/mn/edu/must/sqat/ScholarshipCalculatorTest.java:[153,10] method gpa_loopOnce_single95_is4() is already defined in class mn.edu.must.sqat.ScholarshipCalculatorTest
+[[1;31mERROR[m] /home/munkhjin/lab09-jacoco/src/test/java/mn/edu/must/sqat/ScholarshipCalculatorTest.java:[158,10] method gpa_loopMany_four_is2_5() is already defined in class mn.edu.must.sqat.ScholarshipCalculatorTest
+[[1;34mINFO[m] 4 errors 
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.583 s
+[[1;34mINFO[m] Finished at: 2026-11-06T18:58:42+08:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.13.0:testCompile[m [1m(default-testCompile)[m on project [36mlab09-jacoco[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] /home/munkhjin/lab09-jacoco/src/test/java/mn/edu/must/sqat/ScholarshipCalculatorTest.java:[143,10] method gpa_loopZero_emptyArray_throws() is already defined in class mn.edu.must.sqat.ScholarshipCalculatorTest
+[[1;31mERROR[m] /home/munkhjin/lab09-jacoco/src/test/java/mn/edu/must/sqat/ScholarshipCalculatorTest.java:[148,10] method gpa_loopZero_null_throws() is already defined in class mn.edu.must.sqat.ScholarshipCalculatorTest
+[[1;31mERROR[m] /home/munkhjin/lab09-jacoco/src/test/java/mn/edu/must/sqat/ScholarshipCalculatorTest.java:[153,10] method gpa_loopOnce_single95_is4() is already defined in class mn.edu.must.sqat.ScholarshipCalculatorTest
+[[1;31mERROR[m] /home/munkhjin/lab09-jacoco/src/test/java/mn/edu/must/sqat/ScholarshipCalculatorTest.java:[158,10] method gpa_loopMany_four_is2_5() is already defined in class mn.edu.must.sqat.ScholarshipCalculatorTest
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
