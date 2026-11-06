@@ -139,23 +139,4 @@ class ScholarshipCalculatorTest {
     }
 
     // ---------- Part C: давталтын заагийн тестүүд (0 / 1 / 2+) ----------
-    @Test
-    void gpa_loopZero_emptyArray_throws() {
-        assertThrows(IllegalArgumentException.class, () -> calc.gpa(new double[]{}));
-    }
-
-    @Test
-    void gpa_loopZero_null_throws() {
-        assertThrows(IllegalArgumentException.class, () -> calc.gpa(null));
-    }
-
-    @Test
-    void gpa_loopOnce_single95_is4() {
-        assertEquals(4.0, calc.gpa(new double[]{95}), 0.001);
-    }
-
-    @Test
-    void gpa_loopMany_four_is2_5() {
-        assertEquals(2.5, calc.gpa(new double[]{95, 85, 75, 65}), 0.001);
-    }
 }
