@@ -20,26 +20,77 @@
 [[1;34mINFO[m] [1m--- [0;32mcompiler:3.13.0:testCompile[m [1m(default-testCompile)[m @ [36mlab09-jacoco[0;1m ---[m
 [[1;34mINFO[m] Recompiling the module because of [1mchanged source code[m.
 [[1;34mINFO[m] Compiling 2 source files with javac [debug release 17] to target/test-classes
-[[1;34mINFO[m] -------------------------------------------------------------
-[[1;31mERROR[m] COMPILATION ERROR : 
-[[1;34mINFO[m] -------------------------------------------------------------
-[[1;31mERROR[m] /home/munkhjin/lab09-jacoco/src/test/java/mn/edu/must/sqat/ScholarshipCalculatorTest.java:[143,10] method gpa_loopZero_emptyArray_throws() is already defined in class mn.edu.must.sqat.ScholarshipCalculatorTest
-[[1;31mERROR[m] /home/munkhjin/lab09-jacoco/src/test/java/mn/edu/must/sqat/ScholarshipCalculatorTest.java:[148,10] method gpa_loopZero_null_throws() is already defined in class mn.edu.must.sqat.ScholarshipCalculatorTest
-[[1;31mERROR[m] /home/munkhjin/lab09-jacoco/src/test/java/mn/edu/must/sqat/ScholarshipCalculatorTest.java:[153,10] method gpa_loopOnce_single95_is4() is already defined in class mn.edu.must.sqat.ScholarshipCalculatorTest
-[[1;31mERROR[m] /home/munkhjin/lab09-jacoco/src/test/java/mn/edu/must/sqat/ScholarshipCalculatorTest.java:[158,10] method gpa_loopMany_four_is2_5() is already defined in class mn.edu.must.sqat.ScholarshipCalculatorTest
-[[1;34mINFO[m] 4 errors 
-[[1;34mINFO[m] -------------------------------------------------------------
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32msurefire:3.2.5:test[m [1m(default-test)[m @ [36mlab09-jacoco[0;1m ---[m
+[[1;34mINFO[m] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running mn.edu.must.sqat.[1mScholarshipCalculatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m25[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 s -- in mn.edu.must.sqat.[1mScholarshipCalculatorTest[m
+[[1;34mINFO[m] Running mn.edu.must.sqat.[1mScholarshipCalculatorBoundaryTest[m
+[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m10[m, [1;31mFailures: [0;1;31m1[m, Errors: 0, Skipped: 0, Time elapsed: 0.078 s[1;31m <<< FAILURE![m -- in mn.edu.must.sqat.[1mScholarshipCalculatorBoundaryTest[m
+[[1;31mERROR[m] mn.edu.must.sqat.ScholarshipCalculatorBoundaryTest.letterGrade_boundaries(double, String)[3] -- Time elapsed: 0.004 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <D> but was: <F>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at mn.edu.must.sqat.ScholarshipCalculatorBoundaryTest.letterGrade_boundaries(ScholarshipCalculatorBoundaryTest.java:26)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mFailures: [m
+[[1;31mERROR[m] [1;31m  ScholarshipCalculatorBoundaryTest.letterGrade_boundaries:26 expected: <D> but was: <F>[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mTests run: 35, Failures: 1, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 [[1;34mINFO[m] [1;31mBUILD FAILURE[m
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;34mINFO[m] Total time:  0.583 s
-[[1;34mINFO[m] Finished at: 2026-11-06T18:58:42+08:00
+[[1;34mINFO[m] Total time:  1.302 s
+[[1;34mINFO[m] Finished at: 2026-11-06T19:03:10+08:00
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.13.0:testCompile[m [1m(default-testCompile)[m on project [36mlab09-jacoco[m: [1;31mCompilation failure[m: Compilation failure: 
-[[1;31mERROR[m] /home/munkhjin/lab09-jacoco/src/test/java/mn/edu/must/sqat/ScholarshipCalculatorTest.java:[143,10] method gpa_loopZero_emptyArray_throws() is already defined in class mn.edu.must.sqat.ScholarshipCalculatorTest
-[[1;31mERROR[m] /home/munkhjin/lab09-jacoco/src/test/java/mn/edu/must/sqat/ScholarshipCalculatorTest.java:[148,10] method gpa_loopZero_null_throws() is already defined in class mn.edu.must.sqat.ScholarshipCalculatorTest
-[[1;31mERROR[m] /home/munkhjin/lab09-jacoco/src/test/java/mn/edu/must/sqat/ScholarshipCalculatorTest.java:[153,10] method gpa_loopOnce_single95_is4() is already defined in class mn.edu.must.sqat.ScholarshipCalculatorTest
-[[1;31mERROR[m] /home/munkhjin/lab09-jacoco/src/test/java/mn/edu/must/sqat/ScholarshipCalculatorTest.java:[158,10] method gpa_loopMany_four_is2_5() is already defined in class mn.edu.must.sqat.ScholarshipCalculatorTest
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-surefire-plugin:3.2.5:test[m [1m(default-test)[m on project [36mlab09-jacoco[m: [1;31mThere are test failures.[m
+[[1;31mERROR[m] [1;31m[m
+[[1;31mERROR[m] [1;31mPlease refer to /home/munkhjin/lab09-jacoco/target/surefire-reports for the individual test results.[m
+[[1;31mERROR[m] [1;31mPlease refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.[m
 [[1;31mERROR[m] -> [1m[Help 1][m
 [[1;31mERROR[m] 
 [[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
